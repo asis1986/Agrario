@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Webapp2</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="../src/assets/fvlogo.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script">
+</head>
+
+<body>
+
+<div class="center container" id="cargar">
+
+<div class="preloader-wrapper big active">
+  <div class="spinner-layer spinner-blue">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div>
+    <div class="gap-patch">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-clipper right">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+</div>
+  
+<div class="hide" id="contenido">
+<app-root></app-root>
+</div>
+   
+  
+<script>
+function carga(){
+document.getElementById('cargar').className='hide';
+document.getElementById('contenido').className='';
+}
+
+window.addEventListener('load', ()=>{
+carga();
+})
+
+</script>
+</body>
+
+</html>
